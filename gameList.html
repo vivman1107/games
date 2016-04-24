@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Collector</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-wrapper blue">
+        <a href="index.html" class="brand-logo left">Game Collector</a>
+        <a href="" data-activates="nav-mobile" class="button-collapse right"><i class="material-icons">menu</i></a>
+        <ul id="nav" class="hide-on-med-and-down right">
+          <li><a href="gameList.html">Game List</a></li>
+          <li><a href="addGame.html">Add Game</a></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav right">
+          <li><a href="gameList.html">Game List</a></li>
+          <li><a href="addGame.html">Add Game</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="row">
+        <div class="col s12 m6">
+          <div class="card hoverable blue darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Sonic the Hedgehog</span>
+              <p>Sega Genesis</p>
+              <p>Platformer</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card hoverable blue darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Super Metroid</span>
+              <p>Super Nintendo</p>
+              <p>Platformer</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m6">
+          <div class="card hoverable blue darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">StarCraft II: Wings of Liberty</span>
+              <p>PC</p>
+              <p>Real Time Strategy</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card hoverable blue darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Star Wars Battlefront</span>
+              <p>Xbox One</p>
+              <p>First Person Shooter</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".button-collapse").sideNav();
+      });
+    </script>
+  </body>
+</html>
